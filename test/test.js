@@ -1,9 +1,9 @@
 //test script
 var request = require('supertest');
 var app = require('../server.js');
-describe('GET /', function() {
+describe('GET /test/', function() {
  it('respond with hello world', function(done) {
- //navigate to root and check the the response is "hello world"
- request(app).get('/').expect('hello world', done);
+ //navigate to test url and check the the response is "test ok"
+ request(app).get('/test/').expect('test ok', done);
  });
 });
