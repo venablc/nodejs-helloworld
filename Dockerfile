@@ -9,6 +9,8 @@ COPY pm2.json .
 ENV NPM_CONFIG_LOGLEVEL warn
 RUN npm install --production
 
+EXPOSE 3000
+
 # Show current folder structure in logs
 RUN ls -al -R
 
